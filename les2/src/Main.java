@@ -21,7 +21,7 @@ public class Main {
             String passwordConf = sc.next();
             f = isValidInput(login,password,passwordConf);
         }while(!f);
-        System.out.println(ANSI_CYAN + "All is correct!" + ANSI_RESET);
+        System.out.println(ANSI_CYAN + "All is correct!!!" + ANSI_RESET);
     }
     private static boolean isValidInput(String login,String password, String password1){
         String regex = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*_).{1,20}$";
