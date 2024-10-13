@@ -9,7 +9,7 @@ public class Main {
         mammals.add(new Mammal("Cat", 7, "ThreeColor", 3, 5, false));
         mammals.get(0).feeding();
         int amountMammals = Mammal.countMammals(mammals);
-        System.out.println("All mammals: " + amountMammals);
+        System.out.println("Count of all mammals: " + amountMammals);
 
         Bird pinguin = new Bird("Penguin",2, "White-black");
         pinguin.setCanFly(false);
