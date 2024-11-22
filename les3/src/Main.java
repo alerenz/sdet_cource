@@ -21,9 +21,9 @@ public class Main {
         String mes;
 
         if(f){
-            mes = " делиться на 13 без остатка";
+            mes = " делиться на 13 без остатка!";
         }else{
-            mes = " делиться на 13 c остатком";
+            mes = " делиться на 13 c остатком!";
         }
         System.out.println("Число " + numb + mes);
 
