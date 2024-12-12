@@ -21,10 +21,12 @@ public class Main {
             String passwordConf = sc.next();
             f = isValidInput(login,password,passwordConf);
         }while(!f);
-        System.out.println(ANSI_CYAN + "All is correct!" + ANSI_RESET);
+        System.out.println(ANSI_CYAN + "All is correct!!!" + ANSI_RESET);
     }
     private static boolean isValidInput(String login,String password, String password1){
-        String regex = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*_).{1,20}$";
+        //String regex = "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*_).{1,20}$";
+        // Если я правильно поняла, то возможно при таком регулярном выражении все будет показывать true
+        String regex = "^[a-zA-Z0-9_]{1,19}$";
         String ANSI_RESET = "\u001B[0m";
         boolean f1 = Pattern.matches(regex, login);
         boolean f2 = Pattern.matches(regex, password);
