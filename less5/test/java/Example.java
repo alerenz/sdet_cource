@@ -13,10 +13,10 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class CorrectedExample {
+public class Example {
     private WebDriver driver;
     private WebDriverWait wait;
-    private static final Logger logger = LogManager.getLogger(CorrectedExample.class);
+    private static final Logger logger = LogManager.getLogger(Example.class);
 
     @BeforeClass
     void init() {
