@@ -246,9 +246,9 @@ public class Main {
     }
 
     private static void connectDB(){
-        String url = "jdbc:postgresql://localhost:5433/apteka";
-        String user = "root2";
-        String password = "Leva25";
+        String url = "";
+        String user = "";
+        String password = "";
         try {
             connection = DriverManager.getConnection(url, user, password);
             System.out.println("Подключение к БД успешно!");
